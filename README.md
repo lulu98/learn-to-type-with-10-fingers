@@ -1,1 +1,1 @@
-# learn-to-type-with-10-fingers
+# Learn to type with 10 fingers
