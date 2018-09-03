@@ -12,4 +12,5 @@ All the typing data will be sent to this page after the timer is up. You can see
 ## Technical information
 The information which fingers to use for which key are stored in a database.
 ## TODO 
-- Starting page, where you can select how long you want to play with background music
+- Starting page, where you can select how long you want to play with background music  
+- labels instead of text boxes for the typing data
