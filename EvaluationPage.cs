@@ -62,5 +62,18 @@ namespace LearnToType
             th.Start();
             this.Close();
         }
+
+        private void openStartingPage(object obj)
+        {
+            Application.Run(new StartingPage());
+        }
+
+        private void btnReturnToMainMenu_Click(object sender, EventArgs e)
+        {
+            th = new Thread(openStartingPage);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
+        }
     }
 }

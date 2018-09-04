@@ -34,6 +34,7 @@
             this.typingDataChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.typingDataBox = new System.Windows.Forms.RichTextBox();
             this.btnPlayAgain = new System.Windows.Forms.Button();
+            this.btnReturnToMainMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.typingDataChart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             // 
             // btnPlayAgain
             // 
-            this.btnPlayAgain.Location = new System.Drawing.Point(66, 242);
+            this.btnPlayAgain.Location = new System.Drawing.Point(68, 181);
             this.btnPlayAgain.Name = "btnPlayAgain";
             this.btnPlayAgain.Size = new System.Drawing.Size(214, 66);
             this.btnPlayAgain.TabIndex = 3;
@@ -71,11 +72,22 @@
             this.btnPlayAgain.UseVisualStyleBackColor = true;
             this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
             // 
+            // btnReturnToMainMenu
+            // 
+            this.btnReturnToMainMenu.Location = new System.Drawing.Point(68, 302);
+            this.btnReturnToMainMenu.Name = "btnReturnToMainMenu";
+            this.btnReturnToMainMenu.Size = new System.Drawing.Size(214, 66);
+            this.btnReturnToMainMenu.TabIndex = 4;
+            this.btnReturnToMainMenu.Text = "Main Menu";
+            this.btnReturnToMainMenu.UseVisualStyleBackColor = true;
+            this.btnReturnToMainMenu.Click += new System.EventHandler(this.btnReturnToMainMenu_Click);
+            // 
             // EvaluationPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReturnToMainMenu);
             this.Controls.Add(this.btnPlayAgain);
             this.Controls.Add(this.typingDataBox);
             this.Controls.Add(this.typingDataChart);
@@ -92,5 +104,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart typingDataChart;
         private System.Windows.Forms.RichTextBox typingDataBox;
         private System.Windows.Forms.Button btnPlayAgain;
+        private System.Windows.Forms.Button btnReturnToMainMenu;
     }
 }

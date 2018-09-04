@@ -43,6 +43,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.fingerAdviceBox = new System.Windows.Forms.TextBox();
             this.headingLabel = new System.Windows.Forms.Label();
+            this.btnReturnToMainMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timeBox
@@ -77,7 +78,7 @@
             // 
             // btnPlayAgain
             // 
-            this.btnPlayAgain.Location = new System.Drawing.Point(129, 385);
+            this.btnPlayAgain.Location = new System.Drawing.Point(51, 385);
             this.btnPlayAgain.Name = "btnPlayAgain";
             this.btnPlayAgain.Size = new System.Drawing.Size(156, 73);
             this.btnPlayAgain.TabIndex = 9;
@@ -88,7 +89,7 @@
             // 
             // btnEvaluateTyping
             // 
-            this.btnEvaluateTyping.Location = new System.Drawing.Point(513, 385);
+            this.btnEvaluateTyping.Location = new System.Drawing.Point(588, 385);
             this.btnEvaluateTyping.Name = "btnEvaluateTyping";
             this.btnEvaluateTyping.Size = new System.Drawing.Size(156, 73);
             this.btnEvaluateTyping.TabIndex = 10;
@@ -170,10 +171,10 @@
             // fingerAdviceBox
             // 
             this.fingerAdviceBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fingerAdviceBox.Location = new System.Drawing.Point(199, 301);
+            this.fingerAdviceBox.Location = new System.Drawing.Point(105, 301);
             this.fingerAdviceBox.Multiline = true;
             this.fingerAdviceBox.Name = "fingerAdviceBox";
-            this.fingerAdviceBox.Size = new System.Drawing.Size(404, 61);
+            this.fingerAdviceBox.Size = new System.Drawing.Size(605, 51);
             this.fingerAdviceBox.TabIndex = 17;
             this.fingerAdviceBox.TabStop = false;
             this.fingerAdviceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -188,11 +189,23 @@
             this.headingLabel.TabIndex = 18;
             this.headingLabel.Text = "Train your typing skills";
             // 
+            // btnReturnToMainMenu
+            // 
+            this.btnReturnToMainMenu.Location = new System.Drawing.Point(311, 385);
+            this.btnReturnToMainMenu.Name = "btnReturnToMainMenu";
+            this.btnReturnToMainMenu.Size = new System.Drawing.Size(170, 73);
+            this.btnReturnToMainMenu.TabIndex = 19;
+            this.btnReturnToMainMenu.TabStop = false;
+            this.btnReturnToMainMenu.Text = "Main Menu";
+            this.btnReturnToMainMenu.UseVisualStyleBackColor = true;
+            this.btnReturnToMainMenu.Click += new System.EventHandler(this.btnReturnToMainMenu_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 474);
+            this.Controls.Add(this.btnReturnToMainMenu);
             this.Controls.Add(this.headingLabel);
             this.Controls.Add(this.fingerAdviceBox);
             this.Controls.Add(this.secondLeftCharacterBox);
@@ -232,6 +245,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox fingerAdviceBox;
         private System.Windows.Forms.Label headingLabel;
+        private System.Windows.Forms.Button btnReturnToMainMenu;
     }
 }
 

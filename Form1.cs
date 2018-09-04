@@ -16,7 +16,7 @@ namespace LearnToType
         private int totalTypedCounter;
         Random rand = null;
         private int timeLeft = 0;
-        private const int maxTime = 20;
+        private static int maxTime = 30;
         SoundPlayer mySound = null;
         
         public Form1()
@@ -29,8 +29,17 @@ namespace LearnToType
             headingLabel.Focus();
         }
 
+        public void setTime(int time)
+        {
+            if (time != 0)
+            {
+                maxTime = time;
+            }
+        }
+
         private void resetPage()
         {
+            timer1.Stop();
             correctTypedCounter = 0;
             totalTypedCounter = 0;
 
@@ -162,6 +171,19 @@ namespace LearnToType
         {
             timer1.Stop();
             timer1.Dispose();
+        }
+
+        private void openStartingPage(object obj)
+        {
+            Application.Run(new StartingPage());
+        }
+
+        private void btnReturnToMainMenu_Click(object sender, EventArgs e)
+        {
+            th = new Thread(openStartingPage);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
         }
     }
 }
