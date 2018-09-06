@@ -1,4 +1,5 @@
 # Learn to type with 10 fingers
+Demonstration video: https://www.youtube.com/watch?v=_HZjKgmO3Ug
 ## Introduction
 This application will help you to type with 10 fingers properly.
 ## Starting Page
