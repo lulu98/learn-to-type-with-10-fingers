@@ -1,4 +1,5 @@
-# Learn to type with 10 fingers
+# 10 finger system
+Demonstration video: https://music-transcription-software.000webhostapp.com/projects/ten_finger_system.html
 ## Introduction
 This application will help you to type with 10 fingers properly.
 ## Starting Page
