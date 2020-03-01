@@ -1,5 +1,5 @@
 # 10 finger system
-Demonstration video: https://music-transcription-software.000webhostapp.com/projects/ten_finger_system.html
+Demonstration video: http://www.lukas-graber.tk/projects/ten_finger_system.html
 ## Introduction
 This application will help you to type with 10 fingers properly.
 ## Starting Page
